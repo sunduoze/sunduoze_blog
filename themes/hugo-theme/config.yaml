@@ -1,8 +1,8 @@
 title: "Sun's Blog"
 languageCode: "zh-CN"
-baseurl: "http://enzo-sun.top" #https://github.com/sunduoze/sunduoze.github.io.git
-theme: "hugo-theme" #####
-copyright: "Copyright (c) 2015. All rights reserved."
+baseurl: "http://enzo-sun.top"
+theme: "hugo-theme"
+copyright: "Copyright (c) 2016. All rights reserved."
 MetaDataFormat: "yaml"
 canonifyurls: true
 builddrafts: false
@@ -21,33 +21,31 @@ params:
   CopyrightHTML: "Copyright &#xA9; 2015. All Rights Reserved."
   GitHubUser: "sunduoze"
   SidebarRecentLimit: 5
-  DateForm : "2006年01月02日" #don't change
-  Tagline: "_Tags"
+  DateForm : "2006年01月02日"
+  Tagline: "and so on"
   Description: "Resonance,natural language communication"
-  Keywords: "思考,EE,笔记,其他"
+  Keywords: "思考,电源,嵌入式,其他"
+
   Categories:
+    - "感悟"
+    - "竞赛"
     - "笔记"
-    - "技术"
-    - "思考"
+
+  
 menu:
   main:
-      - Name: "归档"
+      - Name: "整理"
         Pre: "<i class='fa fa-heart'></i>"
         Weight: -110
         Identifier: "post"
         URL: "/post/"
-      - Name: "关于我"
+      - Name: "关于"
         Pre: "<i class='fa fa-road'></i>"
         Identifier: "about"
         Weight: -100
         URL: "/about/"
 author:
   name: "sunduoze"
-
-markup:
-  markup.goldmark
-  markup.goldmark.renderer
-  unsafe = true
 
 images:
   - 480x
