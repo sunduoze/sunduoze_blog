@@ -44,6 +44,11 @@ menu:
 author:
   name: "sunduoze"
 
+markup:
+  markup.goldmark
+  markup.goldmark.renderer
+  unsafe = true
+
 images:
   - 480x
   - 768x
