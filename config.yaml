@@ -1,11 +1,11 @@
 title: "Sun's Blog"
 languageCode: "zh-CN"
 baseurl: "http://enzo-sun.top" #https://github.com/sunduoze/sunduoze.github.io.git
-theme: "hugo-rapid-theme" #####
+theme: "hugo-theme" #####
 copyright: "Copyright (c) 2015. All rights reserved."
 MetaDataFormat: "yaml"
 canonifyurls: true
-builddrafts: false
+builddrafts: true
 PaginatePath: paginator
 pygmentsStyle: "default"
 pygmentsUseClasses: true
