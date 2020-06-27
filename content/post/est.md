@@ -9,9 +9,7 @@ categories:
  - 笔记
 keywords:
  - 生活
- - 电源
- - 嵌入式
- - 其他
+
 url: ""
 
 ---
@@ -75,25 +73,25 @@ print('hello world!')
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="//music.163.com/outchain/player?type=2&id=114389&auto=0&height=66"></iframe>
 
-<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+<!-- <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
             src="/media/music/Bruce Lee Theme.mp3">
       你的浏览器不支持audio标签
-</audio>
+</audio> -->
 
 <embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=8506694&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
 
 
 
 <!-- 失败只是一时，我们不愿屈服 -->
-<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+<!-- <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
             src="/media/music/童年.mp3">
       你的浏览器不支持audio标签
-</audio>
+</audio> -->
 
-!隐藏播放控件
+<!-- !隐藏播放控件
 <audio autoplay="autoplay">
 	<source src="/media/music/童年.mp3" type="audio/mpeg">
-</audio>
+</audio> -->
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
@@ -104,7 +102,6 @@ print('hello world!')
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-[link text itself]: http://blog.coderzh.com
 
 ![qrcode](https://raw.githubusercontent.com/sunduoze/sunduoze.github.io/master/img/author.jpg)
 
@@ -135,19 +132,19 @@ print('hello world!')
 {{% img src="/public/erweicode.jpg"  %}}
 ```
 **PDF的插入**
-```
+
 <div>
     <embed src="/media/note_pdf/PDFtest.pdf" width="690px" height="600px"/>
 </div>
-```
+
 
 **附件的插入**
-```
-记得去掉这两组，各三个单引号才能显示
+
+<!-- 记得去掉这两组，各三个单引号才能显示 -->
 <div>
     <a href="/attachment/2015 NUEDC 框图.vsdx">附件下载</a>
 </div>
-```
+
 ### 3
 
 <br/>
