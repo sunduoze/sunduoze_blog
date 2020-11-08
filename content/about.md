@@ -11,6 +11,14 @@ title: about
 url: ""
 ---
 
+#### 快速部署
+
+在站点根目录执行 Hugo 命令生成最终页面：
+
+```
+hugo --theme=hugo-theme --baseUrl="http://sunduoze.github.io/"
+```
+
 ## 关于
 第一次使用Hogo，也是第一次玩博客，很感谢coderzh提供的模板和翻译，希望这是一个好的开始！
 
