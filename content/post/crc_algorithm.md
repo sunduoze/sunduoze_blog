@@ -182,7 +182,85 @@ Press any key to continue.
     <a href="/media/note_img/CRC/CRC8/CRC_Calc+v0.1.exe">CRC小工具 附件下载</a>
 </div>
 
+### create CRC8 table
 
+生成CRC8 table
+```
+unsigned char cal_table_msb(unsigned char value)
+{
+    unsigned char i, crc;
+
+    crc = value;
+    /* 数据往左移了8位，需要计算8次 */
+    for (i=8; i>0; --i)
+    {
+        if (crc & 0x80)  /* 判断最高位是否为1 */
+        {
+        /* 最高位为1，不需要异或，往左移一位，然后与0x31异或 */
+        /* 0x31(多项式：x8+x5+x4+1，100110001)，最高位不需要异或，直接去掉 */
+            crc = (crc << 1) ^ 0x07;        }
+        else
+        {
+            /* 最高位为0时，不需要异或，整体数据往左移一位 */
+            crc = (crc << 1);
+        }
+    }
+
+    return crc;
+}
+
+unsigned char cal_table_lsb(unsigned char value)
+{
+    unsigned char i, crc;
+
+    unsigned char poly_inverse = 0xE0;//0x8C;
+
+    crc = value;
+    /* 数据往左移了8位，需要计算8次 */
+    for(i=0;i<8;i++)/* 同样需要计算8次 */
+    {
+        if (crc & 0x01)  /* 反序异或变成判断最低位是否为1 */
+            /* 数据变成往右移位了 */
+            /* 计算的多项式从0x31（0011 0001）变成了0x8C (1000 1100) */
+            /* 多项式d值，原来的最高位变成了最低位，原来的最低位变成最高位，8位数据高低位交换一下位置 */
+            crc = (crc >> 1) ^ poly_inverse;
+        else
+            crc = (crc >> 1);
+    }
+
+    return crc;
+}
+
+
+void  create_crc_table(void)
+{
+    unsigned short i;
+    unsigned char j;
+
+    for (i=0; i<=0xFF; i++)
+    {
+        if (0 == (i%16))
+            printf("\n");
+
+        j = i & 0xFF;
+        printf("0x%.2x, ", cal_table_msb(j));  /*依次计算每个字节的crc校验值*/
+    }
+}
+```
+
+使用CRC8 table
+
+```
+unsigned char cal_crc_table(unsigned char *ptr, unsigned char len) 
+{
+    unsigned char  crc = 0x00;
+    while (len--)
+    {
+        crc = crc_table[crc ^ *ptr++];
+    }
+    return (crc);
+}
+```
 
 
 <br/>
