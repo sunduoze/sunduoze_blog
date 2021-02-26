@@ -3,7 +3,7 @@ categories:
 - 笔记
 keywords:
 - 技术
-title: "I2c电气规范"
+title: "i2c设计规范"
 date: 2021-02-26T11:31:31+08:00
 url: ""
 ---
@@ -71,6 +71,21 @@ I2C pin use GL05T low cap TVS to protect.
 USB Dp enum resistor design: usb vdd + 15k res ctrl MMBT2222A B base (C: PUR pin ? may be mcu VDD, E:mcu dp pin)  usb port dp & dn use 33R res then to mcu
 ```
 
+<div>
+    <img src="/media/note_img/i2c_规范/usb_to_gpio_catch_wave.png" width="1153px" height="203px"/>
+</div>
+<br/>
+<div>
+    <img src="/media/note_img/i2c_规范/usb_to_gpio_400kHz_Read.png.png" width="1200px" height="184px"/>
+</div>
+<br/>
+<div>
+    <img src="/media/note_img/i2c_规范/usb_to_gpio_400kHz Write.png" width="1200px" height="184px"/>
+</div>
+<br/>
+
+<br/>
+
 </br>
 #### 2.串联保护电阻Rs的选择
 
@@ -111,6 +126,7 @@ then there could be a problem if the logic HIGH/LOW levels are not properly reco
 
 
 </br>
+
 
 ## 参考文档
 <div>
