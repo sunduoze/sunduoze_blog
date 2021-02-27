@@ -71,6 +71,7 @@ I2C pin use GL05T low cap TVS to protect.
 USB Dp enum resistor design: usb vdd + 15k res ctrl MMBT2222A B base (C: PUR pin ? may be mcu VDD, E:mcu dp pin)  usb port dp & dn use 33R res then to mcu
 ```
 
+<br/>
 <div>
     <img src="/media/note_img/i2c_规范/usb_to_gpio_catch_wave.png" width="1153px" height="203px"/>
 </div>
@@ -82,9 +83,6 @@ USB Dp enum resistor design: usb vdd + 15k res ctrl MMBT2222A B base (C: PUR pin
 <div>
     <img src="/media/note_img/i2c_规范/usb_to_gpio_400kHz Write.png" width="1200px" height="184px"/>
 </div>
-<br/>
-
-<br/>
 
 </br>
 #### 2.串联保护电阻Rs的选择
