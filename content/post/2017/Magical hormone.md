@@ -1,13 +1,9 @@
 ---
 categories:
-- 感悟
-- 竞赛
-- 笔记
+- 思考
 date: 2017-05-04T15:03:40+08:00
 keywords:
 - 思考
-- 电源
-- 嵌入式
 - 其他
 title: "Magical hormone~"
 url: ""

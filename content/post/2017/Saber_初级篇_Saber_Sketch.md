@@ -1,6 +1,7 @@
 ---
 categories:
 - 笔记
+- 技术
 date: 2017-03-04T12:04:39+08:00
 keywords:
 - 电源

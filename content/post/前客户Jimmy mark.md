@@ -1,6 +1,6 @@
 ---
 categories:
-- 笔记
+- 思考
 date: 2020-09-26T14:45:49+08:00
 description: Resonance,natural language communication
 keywords:

@@ -1,6 +1,7 @@
 ---
 categories:
 - 笔记
+- 技术
 date: 2016-10-31T11:04:16+08:00
 keywords:
 - 思考
