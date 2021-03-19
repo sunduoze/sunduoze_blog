@@ -25,7 +25,7 @@ url: ""
 
 数据的组织形式，把属于一个对象的所有属性（数据）组织起来
 
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -61,7 +61,7 @@ int main()
 
 ## 继承 (child 可以继承 parent 所有的‘基因’)
 
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -124,7 +124,7 @@ int main()
 ！如果一门语言只支持类而不支持多态，它只能称之为基于对象而非面向对象
 
     
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -166,7 +166,7 @@ static/media/note_img/C高级用法/c_code_if_test.zip
 
 main.c
 
-```
+```C
 #include <stdint.h>
 
 #include "led.h"
@@ -188,7 +188,7 @@ int main()
 ```
 
 led.h
-```
+```C
 #ifndef LED_H_
 #define LED_H_
 
@@ -207,7 +207,7 @@ void led_off(void);
 
 
 led.c
-```
+```C
 #include "led.h"
 
 static led_if_t led_if;
@@ -229,7 +229,7 @@ void led_off(void)
 ```
 
 type_a_led.h
-```
+```C
 #ifndef TYPE_A_LED_H_
 #define TYPE_A_LED_H_
 
@@ -241,7 +241,7 @@ extern void test(void);
 #endif // TYPE_A_LED_H_INCLUDED
 ```
 type_a_led.c
-```
+```C
 #include "type_a_led.h"
 
 static void on(void)
@@ -260,7 +260,7 @@ led_if_t a_led = {
 
 ```
 type_b_led.h
-```
+```C
 #ifndef TYPE_B_LED_H_
 #define TYPE_B_LED_H_
 
@@ -272,7 +272,7 @@ led_if_t b_led;
 #endif // TYPE_B_LED_H_INCLUDED
 ```
 type_b_led.c
-```
+```C
 #include "type_b_led.h"
 
 static void on(void)
@@ -300,7 +300,7 @@ led_if_t b_led = {
 
 ## 位域 bit fields
 
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -352,7 +352,7 @@ int main()
 
 ## 结构体对齐
 
-```
+```C
 #include <stdio.h>
 #include <stdint.h>
 
