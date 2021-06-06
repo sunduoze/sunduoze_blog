@@ -18,4 +18,6 @@
   <link rel='shortlink' href="{{ .Permalink}}"/>
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}/public/favicon.ico"/>
   {{ partial "head.includes.html" . }}
+  {{ partial "mathjax.html" . }} 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
 </head>
