@@ -66,6 +66,7 @@ graph TD;
     C-->D;
 </div>  
 
+</br>
 <div class="mermaid">
 journey
     title 工作日
@@ -113,7 +114,13 @@ sequenceDiagram
     Bob-->>John: Jolly good!
 </div>
 
-<div class="mermaid">
+<div class="flowchart">
+    start-->start: 开始
+    e-->end: 结束
+    start->e
+</div>
+
+```
 flowchart TB
     c1-->a2
     subgraph one
@@ -128,11 +135,7 @@ flowchart TB
     one --> two
     three --> two
     two --> c2
-    
-    start-->start: 开始
-    e-->end: 结束
-    start->e
-</div>
+```
 
 <div class="mermaid">
 graph LR
@@ -145,8 +148,7 @@ graph LR
     width: 100%
 } -->
 
-<div class="mermaid">
-
+<div class="flowchart">
 st=>start: 页面加载
 
 e=>end: End:>http://www.google.com
