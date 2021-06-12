@@ -55,6 +55,10 @@ wavedrom : false
 |-Os| Balanced Optimization. Optimizes for speed were code size increase is reasonable.|
 |-Oz| Purely optimize for code size.|
 
+<div>
+    <embed src="/media/note_pdf/AC5 to AC6 Migrate ARM Compiler 5 to ARM Compiler 6.pdf" width="690px" height="600px"/>
+</div>
+
 ### 编译器升级注意事项总结
 
 1. CMSIS、HAL，直接使用，CMSIS使用5.6稳妥
