@@ -5,7 +5,7 @@ date: 2021-06-06T20:10:29+08:00
 description: Resonance,natural language communication
 keywords:
 - 其他
-title: "Markdown之mermaid"
+title: "markdown之mermaid"
 url: ""
 math : true
 mermaid : true
