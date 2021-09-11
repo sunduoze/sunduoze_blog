@@ -23,3 +23,33 @@ wavedrom : false
 |特点|① HASL工艺的优点是：价格较低，焊接性能佳。|① OSP工艺的优点是：制程简单，表面非常平整，适合无铅焊接和SMT。|① 镀金工艺的优点是：较长的存储时间（＞12个月），适合接触开关设计和金线邦定，适合电测试。|① ENIG工艺的优点是：不易氧化，可长时间存放，表面平整，适合用于焊接细间隙引脚及焊点较小的元器件，可耐受多次回流焊，适合返修，适合用作COB（Chip On Board）打线的基材。|||||
 |特点|② HASL工艺的缺点是：不适合用来焊接细间隙的引脚及过小的元器件，因为喷锡板的表面平整度较差，且在后续组装过程中容易产生锡珠（solder bead），对细间隙引脚（fine pitch）元器件较易造成短路。|② OSP工艺的缺点是：焊接时需要氮气，且回流焊次数受限（多次焊接会导致膜被破坏，2次没有问题），不适合压接技术，不适合返修且存储条件要求高。|② 镀金工艺的缺点是：较高的成本，金比较厚且金层厚度一致性差，焊接过程中，可能因金太厚而导致焊点脆化，影响强度。|② ENIG工艺的缺点是：成本较高，焊接强度较差，容易产生黑盘问题，镍层会随时间逐渐氧化，长期可靠性不良。|||||
 |现有问题|"锡表面不平整，成本高2%|OSP在焊接过程中，需要更加强劲的Flux，否则消除不了保护膜，从而导致焊接缺陷，OSP本身是绝缘的，它不导电，影响测试|||||||
+
+
+### 戴森电池
+<div>
+    <img src="/media/note_img/戴森电池/(1).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(2).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(3).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(4).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(5).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(6).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(7).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(8).jpg" width="650px" height="365px"/> 
+</div>
+<div>
+    <img src="/media/note_img/戴森电池/(9).jpg" width="650px" height="365px"/> 
+</div>
