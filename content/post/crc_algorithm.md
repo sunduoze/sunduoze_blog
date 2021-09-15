@@ -262,6 +262,18 @@ unsigned char cal_crc_table(unsigned char *ptr, unsigned char len)
 }
 ```
 
+<br/>
+<br/>
+
+### [HotPower超级CRC计算器(转载 侵删)](/media/HotCRC.html)
+
+```
+<div style="width:100%; border:none; text-align:left">
+    <iframe allowtransparency="yes" frameborder="0" width="700" height="1600" src="/media/HotCRC.html"/>
+</div>
+```
+
+
 
 <br/>
 <br/>
