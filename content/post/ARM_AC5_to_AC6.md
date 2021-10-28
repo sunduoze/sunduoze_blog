@@ -203,3 +203,44 @@ Qt特有
 具体的可以在Qt Assistant里索引qtglobal.h查看。
 
 ```
+
+### STM32 how to use
+
+```
+__ALIGN_BEGIN ETH_DMADescTypeDef  DMARxDscrTab[ETH_RXBUFNB] __ALIGN_END;/* Ethernet Rx MA Descriptor */
+```
+
+in stm32f4xx_hal_def.h
+
+```
+#if defined ( __GNUC__ ) && !defined (__CC_ARM) /* GNU Compiler */
+  #ifndef __weak
+    #define __weak   __attribute__((weak))
+  #endif /* __weak */
+  #ifndef __packed
+    #define __packed __attribute__((__packed__))
+  #endif /* __packed */
+#endif /* __GNUC__ */
+
+
+/* Macro to get variable aligned on 4-bytes, for __ICCARM__ the directive "#pragma data_alignment=4" must be used instead */
+#if defined ( __GNUC__ ) && !defined (__CC_ARM) /* GNU Compiler */
+  #ifndef __ALIGN_END
+#define __ALIGN_END    __attribute__ ((aligned (4)))
+  #endif /* __ALIGN_END */
+  #ifndef __ALIGN_BEGIN  
+    #define __ALIGN_BEGIN
+  #endif /* __ALIGN_BEGIN */
+#else
+  #ifndef __ALIGN_END
+    #define __ALIGN_END
+  #endif /* __ALIGN_END */
+  #ifndef __ALIGN_BEGIN      
+    #if defined   (__CC_ARM)      /* ARM Compiler */
+#define __ALIGN_BEGIN    __align(4)
+    #elif defined (__ICCARM__)    /* IAR Compiler */
+      #define __ALIGN_BEGIN 
+    #endif /* __CC_ARM */
+  #endif /* __ALIGN_BEGIN */
+#endif /* __GNUC__ */
+```
