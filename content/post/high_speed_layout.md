@@ -306,5 +306,14 @@ Johnson, Howard W., and Martin Graham, High-Speed Digital Design, a Handbook of 
 Jung, Walt, ed., Op Amp Applications Handbook, Elsevier-Newnes, 2005.
 
 </br>
+
+<div>
+    <a href="/media/note_img/EA/high-speed-printed-circuit-board-layout.pdf">high-speed-printed-circuit-board-layout</a>
+</div>
+
+<div>
+    <a href="/media/note_img/EA/Altera公司高速PCB布线指南.pdf">【待整理学习】Altera公司高速PCB布线指南</a>
+</div>
+
 </br>
 </br>
