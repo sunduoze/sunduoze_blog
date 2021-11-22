@@ -125,6 +125,12 @@ then there could be a problem if the logic HIGH/LOW levels are not properly reco
 
 </br>
 
+## 补充
+
+SCL高电平时才对SDA进行采样，SCL需要保证信号质量（边沿不存在回勾）
+</br>
+
+有些人建议源端串联电阻为75欧姆，为减少过冲和回勾
 
 ## 参考文档
 <div>
