@@ -6,7 +6,7 @@ date: 2022-02-19T19:44:06+08:00
 description: Resonance,natural language communication
 keywords:
 - 其他
-title: "C语语言_宏重载及函数参数统计"
+title: "C语言_宏重载及函数参数统计"
 url: ""
 draft: false
 math : false
@@ -17,7 +17,7 @@ wavedrom : false
 
 ## 通过宏重载和函数参数统计实现C语言的重载(静态多态)
 
-```C++
+```
 #include <iostream>
 using namespace std;
 
