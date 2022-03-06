@@ -33,6 +33,31 @@ gantt
     Tenma            :4-19-18, 1d
 </div>
 
+blog format: 
+```
+<div class="mermaid">
+gantt
+    title Team 项目周进度
+    excludes    weekends
+    dateFormat  MM-DD-HH
+    axisFormat  %m-%d
+    section 3C
+    任务A            :active,a1, 4-18-12, 8h
+    任务B            :after a1, 56h
+    section VC
+    任务C            :crit,done,4-19-02, 12h
+    任务D            :crit,17h
+    section MC
+    任务E            :active,4-18-02, 2d
+    任务F            :2d
+    section 高风险
+    任务E            :4-18-02, 48h
+    任务F            :3d
+    section 新系统开发
+    Tenma            :4-19-18, 1d
+</div>
+
+```
 
 ```
 Input       Example             Description:
@@ -66,6 +91,18 @@ graph TD;
     C-->D;
 </div>  
 
+blog format: 
+```
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>  
+
+```
+
 </br>
 <div class="mermaid">
 journey
@@ -81,12 +118,41 @@ journey
   Sit down:      0: 我,猫,was,hen
 </div>
 
+blog format: 
+```
+<div class="mermaid">
+journey
+    title 工作日
+    section 去工作
+      Make tea: 5: 我
+      Go upstairs: 3: 我
+      Do work: 1: 我, 猫
+    section 回家
+      Go downstairs: 5: 我
+      Sit down:      0: 我,猫,was,hen
+  Go downstairs: 5: 我
+  Sit down:      0: 我,猫,was,hen
+</div>
+
+```
+
 <div class="mermaid">
 pie title What Voldemort doesn't have?
          "FRIENDS" : 2
          "FAMILY" : 3
          "NOSE" : 45
 </div> 
+
+blog format: 
+```
+<div class="mermaid">
+pie title What Voldemort doesn't have?
+         "FRIENDS" : 2
+         "FAMILY" : 3
+         "NOSE" : 45
+</div> 
+
+```
 
 <div class="mermaid">
 sequenceDiagram
@@ -99,6 +165,23 @@ sequenceDiagram
     Bob-->Alice: Checking with John...
     Alice->John: Yes... John, how are you?
 </div>
+
+blog format: 
+```
+<div class="mermaid">
+sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?
+</div>
+
+
+```
 
 <div class="mermaid">
 sequenceDiagram
@@ -114,7 +197,54 @@ sequenceDiagram
     Bob-->>John: Jolly good!
 </div>
 
-<div class="flowchart">
+blog format: 
+```
+<div class="mermaid">
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts<br/>prevail...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</div>
+
+```
+
+<div class="mermaid">
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+    <!-- mermaid.flowchartConfig = {
+    width: 100%
+} -->
+
+blog format: 
+```
+<div class="mermaid">
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+    <!-- mermaid.flowchartConfig = {
+    width: 100%
+} -->
+
+```
+
+
+### flowchart未完成
+
+<div class="flowchart"> <!-- 未完成 -->
     start-->start: 开始
     e-->end: 结束
     start->e
@@ -137,18 +267,7 @@ flowchart TB
     two --> c2
 ```
 
-<div class="mermaid">
-graph LR
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-</div>
-    <!-- mermaid.flowchartConfig = {
-    width: 100%
-} -->
-
-<div class="flowchart">
+<div class="flowchart"> <!-- 未完成 -->
 st=>start: 页面加载
 
 e=>end: End:>http://www.google.com
