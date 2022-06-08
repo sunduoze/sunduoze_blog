@@ -12,8 +12,8 @@ pygmentsUseClasses: true
 RSSUri: "feed.xml"
 disablePathToLower: true 
 hasCJKLanguage: true
-# math : true
-# mermaid : true
+math : true
+mermaid : true
 permalinks:
   posts: /:year/:month/:day/:slug/
 Taxonomies:

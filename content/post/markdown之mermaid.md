@@ -11,6 +11,70 @@ math : true
 mermaid : true
 ---
 
+
+<!--hugo blog 使用 -->
+<script type="Mermaid">
+gantt
+    title Team 项目周进度
+    excludes    weekends
+    dateFormat  MM-DD-HH
+    axisFormat  %m-%d
+    section 3C
+    任务A            :active,a1, 4-18-12, 8h
+    任务B            :after a1, 56h
+    section VC
+    任务C            :crit,done,4-19-02, 12h
+    任务D            :crit,17h
+    section MC
+    任务E            :active,4-18-02, 2d
+    任务F            :2d
+    section 高风险
+    任务E            :4-18-02, 48h
+    任务F            :3d
+    section 新系统开发
+    Tenma            :4-19-18, 1d
+</script>
+
+
+</br>
+
+```Mermaid
+gantt
+    title Team 项目周进度
+    excludes    weekends
+    dateFormat  MM-DD-HH
+    axisFormat  %m-%d
+    section 3C
+    任务A            :active,a1, 4-18-12, 8h
+    任务B            :after a1, 56h
+    section VC
+    任务C            :crit,done,4-19-02, 12h
+    任务D            :crit,17h
+    section MC
+    任务E            :active,4-18-02, 2d
+    任务F            :2d
+    section 高风险
+    任务E            :4-18-02, 48h
+    任务F            :3d
+    section 新系统开发
+    Tenma            :4-19-18, 1d
+```
+
+</br>
+
+<!--hugo blog 使用 -->
+<script type="WaveDrom">
+{ signal : [
+  { name: "clk",  wave: "p......" },
+  { name: "bus",  wave: "x.34.5x",   data: "head body tail" },
+  { name: "wire", wave: "0.1..0." },
+]}
+</script>
+
+</br>
+
+-----------
+
 <div class="mermaid">
 gantt
     title Team 项目周进度

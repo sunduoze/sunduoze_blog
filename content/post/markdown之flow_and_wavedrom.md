@@ -12,7 +12,7 @@ url: ""
 wavedrom : true
 ---
 
-
+<!--hugo blog 使用 -->
 <script type="WaveDrom">
 { signal : [
   { name: "clk",  wave: "p......" },
@@ -21,6 +21,7 @@ wavedrom : true
 ]}
 </script>
 
+<!--Vscode markdown 使用 -->
 ```WaveDrom
 { signal : [
   { name: "clk",  wave: "p......" },
@@ -28,7 +29,7 @@ wavedrom : true
   { name: "wire", wave: "0.1..0." },
 ]}
 ```
-
+<!--博客撰写代码使用 -->
 blog format:
 ```
 <script type="WaveDrom">
