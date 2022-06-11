@@ -12,69 +12,6 @@ mermaid : true
 ---
 
 
-<!--hugo blog 使用 -->
-<script type="Mermaid">
-gantt
-    title Team 项目周进度
-    excludes    weekends
-    dateFormat  MM-DD-HH
-    axisFormat  %m-%d
-    section 3C
-    任务A            :active,a1, 4-18-12, 8h
-    任务B            :after a1, 56h
-    section VC
-    任务C            :crit,done,4-19-02, 12h
-    任务D            :crit,17h
-    section MC
-    任务E            :active,4-18-02, 2d
-    任务F            :2d
-    section 高风险
-    任务E            :4-18-02, 48h
-    任务F            :3d
-    section 新系统开发
-    Tenma            :4-19-18, 1d
-</script>
-
-
-</br>
-
-```Mermaid
-gantt
-    title Team 项目周进度
-    excludes    weekends
-    dateFormat  MM-DD-HH
-    axisFormat  %m-%d
-    section 3C
-    任务A            :active,a1, 4-18-12, 8h
-    任务B            :after a1, 56h
-    section VC
-    任务C            :crit,done,4-19-02, 12h
-    任务D            :crit,17h
-    section MC
-    任务E            :active,4-18-02, 2d
-    任务F            :2d
-    section 高风险
-    任务E            :4-18-02, 48h
-    任务F            :3d
-    section 新系统开发
-    Tenma            :4-19-18, 1d
-```
-
-</br>
-
-<!--hugo blog 使用 -->
-<script type="WaveDrom">
-{ signal : [
-  { name: "clk",  wave: "p......" },
-  { name: "bus",  wave: "x.34.5x",   data: "head body tail" },
-  { name: "wire", wave: "0.1..0." },
-]}
-</script>
-
-</br>
-
------------
-
 <div class="mermaid">
 gantt
     title Team 项目周进度
@@ -122,30 +59,6 @@ gantt
 </div>
 
 ```
-
-```
-Input       Example             Description:
-YYYY        2014                4 digit year
-YY          14                  2 digit year
-Q           1..4                Quarter of year. Sets month to first month in quarter.
-M MM        1..12               Month number
-MMM MMMM    January..Dec        Month name in locale set by moment.locale()
-D DD        1..31               Day of month
-Do          1st..31st           Day of month with ordinal
-DDD DDDD    1..365              Day of year
-X           1410715640.579      Unix timestamp
-x           1410715640579       Unix ms timestamp
-H HH        0..23               24 hour time
-h hh        1..12               12 hour time used with a A.
-a A         am pm               Post or ante meridiem
-m mm        0..59               Minutes
-s ss        0..59               Seconds
-S           0..9                Tenths of a second
-SS          0..99               Hundreds of a second
-SSS         0..999              Thousandths of a second
-Z ZZ        +12:00              Offset from UTC as +-HH:mm, +-HHmm, or Z
-```
-
 
 <div class="mermaid">
 graph TD;
