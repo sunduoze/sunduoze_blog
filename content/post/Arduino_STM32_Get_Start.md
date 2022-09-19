@@ -39,6 +39,7 @@ Installing driver(s)...
 
 请按任意键继续. . .
 ```
+</br>
 
 4. 打开Arduino环境，执行以下几个步骤
 
@@ -47,6 +48,12 @@ Installing driver(s)...
 * 选择 "工具 -> Upload method:"xxxx" -> STM32duino bootloader"
 * 选择 "工具 -> CPU Speed(MHz):"xxxx" -> 48Mhz(Slow - with USB)"
 * 选择 "工具 -> Optimize:"xxxx" -> Smallest (default)"
+
+5. **安装编译器及工具链 arduino SAM Boards ARM**
+
+* 选择 "工具 -> 开发板:"xxxx" -> Generic STM32F103C series" -> 开发板管理器...
+* 进入开发板管理器搜索arduino SAM Boards ARM并安装（Cortex M3）
+
 
 test.ino
 ```
